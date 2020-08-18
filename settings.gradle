@@ -1,0 +1,5 @@
+include ':libmodule'
+include ':lib_aspect'
+include ':plugin'
+include ':app'
+rootProject.name = "AspectjPractice"
