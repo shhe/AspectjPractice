@@ -8,9 +8,6 @@ import org.aspectj.tools.ajc.Main*/
 buildscript {
     repositories {
         mavenCentral()
-        maven {
-            url uri('repo')
-        }
     }
 }
 
@@ -50,7 +47,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation "org.aspectj:aspectjrt:1.9.1"
-//    classpath "com.aspectj.plugin:practice:1.0.0"
     implementation project(':lib_aspect')
 }
 
