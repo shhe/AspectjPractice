@@ -14,7 +14,7 @@ import java.lang.annotation.Target;
  * @Date 2020/8/18 下午8:21
  * @Description:
  */
-@Target({ElementType.TYPE})
+@Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Page {
     String name();

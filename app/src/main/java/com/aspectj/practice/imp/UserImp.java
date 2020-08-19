@@ -10,7 +10,7 @@ import com.aspectj.practice.interfaces.User;
  * @Description:
  */
 @ClassAnnotation
-class userImp implements User {
+public class UserImp implements User {
 
     @Override
     public int add(int userId) {
@@ -31,7 +31,7 @@ class userImp implements User {
 
     }
 
-    @MethodAnnotation
+    @MethodAnnotation(note = "addAttribute")
     public void addAttribute(int position) {
 
     }

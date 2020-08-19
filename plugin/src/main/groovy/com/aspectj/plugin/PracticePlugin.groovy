@@ -45,6 +45,8 @@ public class PracticePlugin implements Plugin<Project> {
                 if (!project.aspectJPlugin.enable) {
                     return
                 }
+                println("33333333 " + project.name + " 33333 "+variant.name.capitalize())
+
 
                 JavaCompile javaCompile = variant.javaCompile
 

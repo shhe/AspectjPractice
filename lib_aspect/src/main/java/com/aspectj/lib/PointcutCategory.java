@@ -394,7 +394,7 @@ public class PointcutCategory {
     @Around("method(aspectLog) || constructor(aspectLog)")
     public Object logAndExecute(ProceedingJoinPoint joinPoint, AspectLog aspectLog) throws Throwable {
         String note = aspectLog.note();//得到注解checkString的返回值
-        Log.i(TAG, "logAndExecute "+note);
+        Log.i(TAG, "logAndExecute "+note+ " "+joinPoint.getSourceLocation());
         Object result = joinPoint.proceed(); // 调用原来的方法
         long stopNanos = System.nanoTime();
         return result;
@@ -406,7 +406,7 @@ public class PointcutCategory {
         MethodSignature methodSignature = ((MethodSignature) joinPoint.getSignature());
         AspectLog aspectLog = methodSignature.getMethod().getAnnotation(AspectLog.class);
         String note = aspectLog.note();
-        Log.i(TAG, "logAndExecute2 "+note);
+        Log.i(TAG, "logAndExecute2 "+note+ " "+joinPoint.getSourceLocation());
         Object result = joinPoint.proceed();
         return result;
     }
@@ -422,8 +422,8 @@ public class PointcutCategory {
     }
 
     @After(value = "thisAndCallMethod(activity, param)")
-    public void callMethod(JoinPoint joinPoint, AppCompatActivity activity, int param) {
-        Log.i(TAG, "... callMethod ... "+joinPoint.getSignature().getName()+" "+joinPoint.getSourceLocation());
+    public void callMethodThis(JoinPoint joinPoint, AppCompatActivity activity, int param) {
+        Log.i(TAG, "... callMethodThis ... "+joinPoint.getSignature().getName()+" "+joinPoint.getSourceLocation());
     }
 
     /**

@@ -28,7 +28,6 @@ public class LibActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lib_activity);
         findViewById(R.id.tv_execute).setOnClickListener(mOnClickListener);
-        testLibActivity();
     }
 
     @Override
@@ -37,12 +36,13 @@ public class LibActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
+    protected void onPause() {
+        super.onPause();
     }
 
-    private void testLibActivity() {
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
     private View.OnClickListener mOnClickListener = new View.OnClickListener() {

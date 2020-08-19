@@ -12,6 +12,7 @@ import com.aspectj.lib.interfaces.FundamentalOperations;
 import com.aspectj.libmodule.LibActivity;
 import com.aspectj.practice.dto.MemberDto;
 import com.aspectj.practice.imp.FundamentalOperationsImpl;
+import com.aspectj.practice.imp.UserImp;
 import com.aspectj.practice.interfaces.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -70,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.tv_annotation:
                     testAnnotation();
+                    UserImp user = new UserImp();
+                    user.addAttribute(1);
                     break;
                 case R.id.tv_target:
                     FundamentalOperations operations = new FundamentalOperationsImpl();
@@ -107,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
+        user.add(34);
     }
 
     private void testException() {

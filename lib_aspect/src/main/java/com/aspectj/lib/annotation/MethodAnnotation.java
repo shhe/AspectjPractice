@@ -11,6 +11,7 @@ import java.lang.annotation.Target;
  * @Description:
  */
 @Target(ElementType.METHOD)
-@Retention(RetentionPolicy.CLASS)
+@Retention(RetentionPolicy.RUNTIME)
 public @interface MethodAnnotation {
+    String note();
 }
