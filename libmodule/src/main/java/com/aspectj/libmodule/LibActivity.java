@@ -8,11 +8,14 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.aspectj.annotation.Page;
+
 /**
  * @author shhe
  * @Date 2020/8/13 下午4:07
  * @Description:
  */
+@Page(name = "课程详情页")
 public class LibActivity extends AppCompatActivity {
 
     public static void launch(Context context) {

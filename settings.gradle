@@ -1,3 +1,4 @@
+include ':annotation'
 include ':libmodule'
 include ':lib_aspect'
 include ':plugin'
