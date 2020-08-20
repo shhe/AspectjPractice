@@ -1,19 +1,17 @@
 package com.aspectj.practice;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.aspectj.lib.annotation.AspectLog;
-import com.aspectj.lib.interfaces.FundamentalOperations;
+import com.aspectj.annotation.AspectLog;
 import com.aspectj.libmodule.LibActivity;
 import com.aspectj.practice.dto.MemberDto;
+import com.aspectj.practice.framework.interfaces.FundamentalOperations;
+import com.aspectj.practice.framework.interfaces.User;
 import com.aspectj.practice.imp.FundamentalOperationsImpl;
-import com.aspectj.practice.imp.UserImp;
-import com.aspectj.practice.interfaces.User;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -71,8 +69,6 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.tv_annotation:
                     testAnnotation();
-                    UserImp user = new UserImp();
-                    user.addAttribute(1);
                     break;
                 case R.id.tv_target:
                     FundamentalOperations operations = new FundamentalOperationsImpl();

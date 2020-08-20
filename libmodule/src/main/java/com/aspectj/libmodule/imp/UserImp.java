@@ -1,8 +1,8 @@
-package com.aspectj.practice.imp;
+package com.aspectj.libmodule.imp;
 
-import com.aspectj.lib.annotation.ClassAnnotation;
-import com.aspectj.lib.annotation.MethodAnnotation;
-import com.aspectj.practice.interfaces.User;
+import com.aspectj.annotation.ClassAnnotation;
+import com.aspectj.annotation.MethodAnnotation;
+import com.aspectj.practice.framework.interfaces.User;
 
 /**
  * @author shhe

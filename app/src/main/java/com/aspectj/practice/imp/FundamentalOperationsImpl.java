@@ -1,6 +1,6 @@
 package com.aspectj.practice.imp;
 
-import com.aspectj.lib.interfaces.FundamentalOperations;
+import com.aspectj.practice.framework.interfaces.FundamentalOperations;
 
 /**
  * @author shhe

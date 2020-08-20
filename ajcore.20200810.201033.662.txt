@@ -198,10 +198,10 @@ io.netty.allocator.numHeapArenas=1
 ---- Compiler Messages ---
 info Pipelining compilation
 warning at com/aspectj/lib/AdviceCategory.java::0 no match for this type name: com.aspectj.practice.MainActivity [Xlint:invalidAbsoluteTypeName]
-warning at com/aspectj/lib/AdviceCategory.java::0 no match for this type name: com.aspectj.practice.interfaces.User [Xlint:invalidAbsoluteTypeName]
-warning at com/aspectj/lib/PointcutCategory.java::0 no match for this type name: com.aspectj.practice.interfaces.User [Xlint:invalidAbsoluteTypeName]
-warning at com/aspectj/lib/PointcutCategory.java::0 no match for this type name: com.aspectj.practice.interfaces.User [Xlint:invalidAbsoluteTypeName]
-warning at com/aspectj/lib/PointcutCategory.java::0 no match for this type name: com.aspectj.practice.interfaces.User [Xlint:invalidAbsoluteTypeName]
+warning at com/aspectj/lib/AdviceCategory.java::0 no match for this type name: com.aspectj.practice.framework.interfaces.User [Xlint:invalidAbsoluteTypeName]
+warning at com/aspectj/lib/PointcutCategory.java::0 no match for this type name: com.aspectj.practice.framework.interfaces.User [Xlint:invalidAbsoluteTypeName]
+warning at com/aspectj/lib/PointcutCategory.java::0 no match for this type name: com.aspectj.practice.framework.interfaces.User [Xlint:invalidAbsoluteTypeName]
+warning at com/aspectj/lib/PointcutCategory.java::0 no match for this type name: com.aspectj.practice.framework.interfaces.User [Xlint:invalidAbsoluteTypeName]
 info weaver operating in reweavable mode.  Need to verify any required types exist.
 info processing reweavable type com.aspectj.lib.PointcutCategory: com/aspectj/lib/PointcutCategory.java
 info successfully verified type com.aspectj.lib.PointcutCategory exists.  Originates from com/aspectj/lib/PointcutCategory.java
@@ -950,8 +950,8 @@ java.lang.NullPointerException
 
 info woven class com.aspectj.lib.PointcutCategory$AjcClosure17 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/lib_aspect/build/intermediates/javac/debug/classes/com/aspectj/lib/PointcutCategory$AjcClosure17.class)
 info woven class com.aspectj.lib.BuildConfig (from /Users/guojujun/mod/java_bytecode/AspectjPractice/lib_aspect/build/intermediates/javac/debug/classes/com/aspectj/lib/BuildConfig.class)
-info woven class com.aspectj.lib.annotation.MethodAnnotation (from /Users/guojujun/mod/java_bytecode/AspectjPractice/lib_aspect/build/intermediates/javac/debug/classes/com/aspectj/lib/annotation/MethodAnnotation.class)
-info woven class com.aspectj.lib.annotation.ClassAnnotation (from /Users/guojujun/mod/java_bytecode/AspectjPractice/lib_aspect/build/intermediates/javac/debug/classes/com/aspectj/lib/annotation/ClassAnnotation.class)
+info woven class com.aspectj.annotation.MethodAnnotation (from /Users/guojujun/mod/java_bytecode/AspectjPractice/lib_aspect/build/intermediates/javac/debug/classes/com/aspectj/lib/annotation/MethodAnnotation.class)
+info woven class com.aspectj.annotation.ClassAnnotation (from /Users/guojujun/mod/java_bytecode/AspectjPractice/lib_aspect/build/intermediates/javac/debug/classes/com/aspectj/lib/annotation/ClassAnnotation.class)
 warning at com/aspectj/lib/PointcutCategory.java::0 can not resolve this member: void com.aspectj.lib.PointcutCategory.afterSubClass_aroundBody10(com.aspectj.lib.PointcutCategory, org.aspectj.lang.JoinPoint) [Xlint:unresolvableMember]
 abort trouble in: 
 public class com.aspectj.lib.PointcutCategory$AjcClosure11 extends org.aspectj.runtime.internal.AroundClosure:

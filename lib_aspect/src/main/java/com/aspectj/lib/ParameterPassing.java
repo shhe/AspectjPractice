@@ -22,8 +22,8 @@ public class ParameterPassing {
         Log.i(TAG, "BeforeAdd: "*//*+joinPoint.getTarget().toString()*//* + "param:"+param);
     }*/
 
-    @Pointcut("execution(* com.aspectj.practice.interfaces.User.add(..))")
-//    @Pointcut("execution(* com.aspectj.practice.interfaces.User.add(..)) && args(userId, ..)")
+    @Pointcut("execution(* com.aspectj.practice.framework.interfaces.User.add(..))")
+//    @Pointcut("execution(* com.aspectj.practice.framework.interfaces.User.add(..)) && args(userId, ..)")
     public void addOfUserPointcut() {
 
     }

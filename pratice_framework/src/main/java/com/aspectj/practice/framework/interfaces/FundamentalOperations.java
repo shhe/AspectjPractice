@@ -1,4 +1,4 @@
-package com.aspectj.lib.interfaces;
+package com.aspectj.practice.framework.interfaces;
 
 /**
  * @author shhe

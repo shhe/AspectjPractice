@@ -4190,12 +4190,12 @@ file or directory '/Users/guojujun/mod/java_bytecode/AspectjPractice/libmodule/b
 Compiling with JDK Java compiler API.
 Created classpath snapshot for incremental compilation in 0.0 secs.
 no match for this type name: com.aspectj.practice.MainActivity [Xlint:invalidAbsoluteTypeName]
-no match for this type name: com.aspectj.practice.interfaces.User [Xlint:invalidAbsoluteTypeName]
-no match for this type name: com.aspectj.practice.interfaces.User [Xlint:invalidAbsoluteTypeName]
-no match for this type name: com.aspectj.practice.interfaces.User [Xlint:invalidAbsoluteTypeName]
-no match for this type name: com.aspectj.practice.interfaces.User [Xlint:invalidAbsoluteTypeName]
-no match for this type name: com.aspectj.practice.interfaces.User [Xlint:invalidAbsoluteTypeName]
-no match for this type name: com.aspectj.practice.interfaces.User [Xlint:invalidAbsoluteTypeName]
+no match for this type name: com.aspectj.practice.framework.interfaces.User [Xlint:invalidAbsoluteTypeName]
+no match for this type name: com.aspectj.practice.framework.interfaces.User [Xlint:invalidAbsoluteTypeName]
+no match for this type name: com.aspectj.practice.framework.interfaces.User [Xlint:invalidAbsoluteTypeName]
+no match for this type name: com.aspectj.practice.framework.interfaces.User [Xlint:invalidAbsoluteTypeName]
+no match for this type name: com.aspectj.practice.framework.interfaces.User [Xlint:invalidAbsoluteTypeName]
+no match for this type name: com.aspectj.practice.framework.interfaces.User [Xlint:invalidAbsoluteTypeName]
 no match for this type name: com.aspectj.practice.dto.MemberDto [Xlint:invalidAbsoluteTypeName]
 no match for this type name: com.aspectj.practice.dto.MemberDto [Xlint:invalidAbsoluteTypeName]
 no match for this type name: com.aspectj.practice.dto.MemberDto [Xlint:invalidAbsoluteTypeName]
@@ -4331,9 +4331,9 @@ Created classpath snapshot for incremental compilation in 0.0 secs. 166 duplicat
 no match for this type name: com.aspectj.practice.interfaces [Xlint:invalidAbsoluteTypeName]
 Pipelining compilation
 weaver operating in reweavable mode.  Need to verify any required types exist.
-woven class com.aspectj.practice.imp.FundamentalOperationsImpl (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/FundamentalOperationsImpl.class)
-woven class com.aspectj.practice.imp.FundamentalOperationsImpl$AjcClosure1 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/FundamentalOperationsImpl.class)
-woven class com.aspectj.practice.imp.FundamentalOperationsImpl$AjcClosure3 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/FundamentalOperationsImpl.class)
+woven class com.aspectj.pratice.framework.imp.FundamentalOperationsImpl (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/FundamentalOperationsImpl.class)
+woven class com.aspectj.pratice.framework.imp.FundamentalOperationsImpl$AjcClosure1 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/FundamentalOperationsImpl.class)
+woven class com.aspectj.pratice.framework.imp.FundamentalOperationsImpl$AjcClosure3 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/FundamentalOperationsImpl.class)
 woven class com.aspectj.practice.MainActivity (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/MainActivity.class)
 woven class com.aspectj.practice.MainActivity$AjcClosure1 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/MainActivity.class)
 woven class com.aspectj.practice.MainActivity$AjcClosure3 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/MainActivity.class)
@@ -4348,12 +4348,12 @@ woven class com.aspectj.practice.MainActivity$AjcClosure19 (from /Users/guojujun
 woven class com.aspectj.practice.MainActivity$AjcClosure21 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/MainActivity.class)
 woven class com.aspectj.practice.MainActivity$AjcClosure23 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/MainActivity.class)
 woven class com.aspectj.practice.BuildConfig (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/BuildConfig.class)
-woven class com.aspectj.practice.imp.UserImp (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
-woven class com.aspectj.practice.imp.UserImp$AjcClosure1 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
-woven class com.aspectj.practice.imp.UserImp$AjcClosure3 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
-woven class com.aspectj.practice.imp.UserImp$AjcClosure5 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
-woven class com.aspectj.practice.imp.UserImp$AjcClosure7 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
-woven class com.aspectj.practice.imp.UserImp$AjcClosure9 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
+woven class com.aspectj.pratice.framework.imp.UserImp (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
+woven class com.aspectj.pratice.framework.imp.UserImp$AjcClosure1 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
+woven class com.aspectj.pratice.framework.imp.UserImp$AjcClosure3 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
+woven class com.aspectj.pratice.framework.imp.UserImp$AjcClosure5 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
+woven class com.aspectj.pratice.framework.imp.UserImp$AjcClosure7 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
+woven class com.aspectj.pratice.framework.imp.UserImp$AjcClosure9 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/imp/userImp.class)
 woven class com.aspectj.practice.SubMainActivity (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/SubMainActivity.class)
 woven class com.aspectj.practice.SubMainActivity$AjcClosure1 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/SubMainActivity.class)
 woven class com.aspectj.practice.dto.MemberDto (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/dto/MemberDto.class)
@@ -4426,7 +4426,7 @@ woven class com.aspectj.practice.MainActivity$3 (from /Users/guojujun/mod/java_b
 woven class com.aspectj.practice.MainActivity$3$AjcClosure1 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/MainActivity$3.class)
 woven class com.aspectj.practice.MainActivity$3$AjcClosure3 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/MainActivity$3.class)
 woven class com.aspectj.practice.MainActivity$3$AjcClosure5 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/MainActivity$3.class)
-woven class com.aspectj.practice.interfaces.User (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/interfaces/User.class)
+woven class com.aspectj.practice.framework.interfaces.User (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/interfaces/User.class)
 woven class com.aspectj.practice.MainActivity$1 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/MainActivity$1.class)
 woven class com.aspectj.practice.MainActivity$1$AjcClosure1 (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/MainActivity$1.class)
 woven class com.aspectj.practice.Utils (from /Users/guojujun/mod/java_bytecode/AspectjPractice/app/build/intermediates/javac/debug/classes/com/aspectj/practice/Utils.class)

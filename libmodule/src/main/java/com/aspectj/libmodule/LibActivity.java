@@ -5,10 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.aspectj.annotation.Page;
+import com.aspectj.libmodule.imp.UserImp;
 
 /**
  * @author shhe
@@ -27,7 +27,7 @@ public class LibActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lib_activity);
-        findViewById(R.id.tv_execute).setOnClickListener(mOnClickListener);
+        findViewById(R.id.tv_get_annotation_value).setOnClickListener(mOnClickListener);
     }
 
     @Override
@@ -48,9 +48,12 @@ public class LibActivity extends AppCompatActivity {
     private View.OnClickListener mOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (v.getId() == R.id.tv_execute) {
+            if (v.getId() == R.id.tv_get_annotation_value) {
                 ComputeOption option = new ComputeOption();
                 option.add(2, 3);
+
+                UserImp user = new UserImp();
+                user.addAttribute(1);
             }
         }
     };

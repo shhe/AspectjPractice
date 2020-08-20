@@ -1,3 +1,4 @@
+include ':pratice_framework'
 include ':annotation'
 include ':libmodule'
 include ':lib_aspect'

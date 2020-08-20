@@ -23,7 +23,7 @@ public class AdviceCategory {
     public static final String TAG = "AdviceCategory";
 
     @Pointcut("execution(* com.aspectj.practice.MainActivity.onCreate(..))")
-//    @Pointcut("execution(* com.aspectj.practice.interfaces.User.add(..))")
+//    @Pointcut("execution(* com.aspectj.practice.framework.interfaces.User.add(..))")
     public void onCreatePointcut() {
 
     }
@@ -33,7 +33,7 @@ public class AdviceCategory {
         Log.i(TAG, "beforeOnCreate "+joinPoint.getSignature().getDeclaringType().getSimpleName());
     }
 
-    @Pointcut("execution(* com.aspectj.practice.interfaces.User.add(..))")
+    @Pointcut("execution(* com.aspectj.practice.framework.interfaces.User.add(..))")
     public void addOfUserPointcut() {
 
     }

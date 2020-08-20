@@ -1,12 +1,6 @@
 package com.aspectj.lib;
 
-import com.aspectj.lib.interfaces.IHasName;
-import com.aspectj.lib.vo.Point;
-
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.DeclareParents;
-
-import java.util.Vector;
 
 /**
  * @author shhe

@@ -5,8 +5,8 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.aspectj.lib.annotation.AspectLog;
-import com.aspectj.lib.interfaces.FundamentalOperations;
+import com.aspectj.annotation.AspectLog;
+import com.aspectj.practice.framework.interfaces.FundamentalOperations;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -101,7 +101,7 @@ public class PointcutCategory {
     /**
      * 匹配所有实现 User 的类的所有方法
      */
-    @Pointcut("within(com.aspectj.practice.interfaces.User+)")
+    @Pointcut("within(com.aspectj.practice.framework.interfaces.User+)")
     public void interfaceIpm() {
 
     }
@@ -152,7 +152,7 @@ public class PointcutCategory {
 
     }
 
-    @Pointcut("this(com.aspectj.practice.interfaces.User)")
+    @Pointcut("this(com.aspectj.practice.framework.interfaces.User)")
     public void thisPointcut() {
 
     }
@@ -165,7 +165,7 @@ public class PointcutCategory {
     /**
      * target 用于匹配当前目标对象类型的执行方法
      */
-    @Pointcut("target(com.aspectj.practice.interfaces.User)")
+    @Pointcut("target(com.aspectj.practice.framework.interfaces.User)")
     public void targetPointcut() {
 
     }
@@ -178,7 +178,7 @@ public class PointcutCategory {
     /**
      * 匹配使用了注解 ClassAnnotation 的类
      */
-    @Pointcut("@within(com.aspectj.lib.annotation.ClassAnnotation)")
+    @Pointcut("@within(com.aspectj.annotation.ClassAnnotation)")
     public void withAnnotationClassPointcut() {
 
     }
@@ -191,7 +191,7 @@ public class PointcutCategory {
     /**
      * 匹配使用了注解 MethodAnnotation 的方法
      */
-    @Pointcut("@annotation(com.aspectj.lib.annotation.MethodAnnotation)")
+    @Pointcut("@annotation(com.aspectj.annotation.MethodAnnotation)")
     public void withAnnotationMethodPointcut() {
 
     }
@@ -199,7 +199,7 @@ public class PointcutCategory {
     /**
      * 匹配使用了注解 MethodAnnotation 的方法
      */
-    @Pointcut("execution(@com.aspectj.lib.annotation.MethodAnnotation * *(..))")
+    @Pointcut("execution(@com.aspectj.annotation.MethodAnnotation * *(..))")
     public void withAnnotationMethodPointcut2() {
 
     }
@@ -213,7 +213,7 @@ public class PointcutCategory {
     /**
      * 匹配任意实现了接口User的目标对象的方法并且方法使用了注解 MethodAnnotation
      */
-    @Pointcut("target(com.aspectj.practice.interfaces.User) && @annotation(com.aspectj.lib.annotation.MethodAnnotation)")
+    @Pointcut("target(com.aspectj.practice.framework.interfaces.User) && @annotation(com.aspectj.annotation.MethodAnnotation)")
     public void withOperatorPointcut() {
 
     }
@@ -226,7 +226,7 @@ public class PointcutCategory {
     /**
      * 匹配任意实现了接口User的目标对象的方法并且方法名称为 add
      */
-    @Pointcut("target(com.aspectj.practice.interfaces.User) && execution(* com.aspectj.practice.interfaces.User.add(..))")
+    @Pointcut("target(com.aspectj.practice.framework.interfaces.User) && execution(* com.aspectj.practice.framework.interfaces.User.add(..))")
     public void withOperatorAddNamePointcut() {
 
     }
@@ -236,7 +236,7 @@ public class PointcutCategory {
 
     }
 
-    @Pointcut("call(* com.aspectj.practice.interfaces.User.*(..))")
+    @Pointcut("call(* com.aspectj.practice.framework.interfaces.User.*(..))")
     public void methodCallPointcut() {
 
     }
@@ -329,7 +329,7 @@ public class PointcutCategory {
      * @param joinPoint
      * @param userId
      */
-//    @Before(value = "call(* com.aspectj.practice.interfaces.User.add(..)) && args(userId)")
+//    @Before(value = "call(* com.aspectj.practice.framework.interfaces.User.add(..)) && args(userId)")
     @Before(value = "methodArgsPointcut(userId)")
 //    @Before(value = "call(* com.aspectj.practice..*.*(..)) && args(userId)")
     public void addMethodWithArgs(JoinPoint joinPoint, int userId) {
@@ -368,25 +368,25 @@ public class PointcutCategory {
     }
 
     // @AspectLog 修饰的方法的执行
-    @Pointcut("execution(@com.aspectj.lib.annotation.AspectLog * *(..)) && @annotation(aspectLog)")
+    @Pointcut("execution(@com.aspectj.annotation.AspectLog * *(..)) && @annotation(aspectLog)")
     public void method(AspectLog aspectLog) {
 
     }
 
     // @AspectLog 修饰的方法的执行
-    @Pointcut("execution(@com.aspectj.lib.annotation.AspectLog * *(..))")
+    @Pointcut("execution(@com.aspectj.annotation.AspectLog * *(..))")
     public void method2() {
 
     }
 
     // @AspectLog 修饰的构造函数的执行
-    @Pointcut("execution(@com.aspectj.lib.annotation.AspectLog *.new(..)) && @annotation(aspectLog)")
+    @Pointcut("execution(@com.aspectj.annotation.AspectLog *.new(..)) && @annotation(aspectLog)")
     public void constructor(AspectLog aspectLog) {
 
     }
 
     // @AspectLog 修饰的构造函数的执行
-    @Pointcut("execution(@com.aspectj.lib.annotation.AspectLog *.new(..))")
+    @Pointcut("execution(@com.aspectj.annotation.AspectLog *.new(..))")
     public void constructor2() {
 
     }
@@ -441,7 +441,7 @@ public class PointcutCategory {
         Log.i(TAG, "... targetCallMethod ... "+joinPoint.getSignature().getName()+" "+joinPoint.getSourceLocation());
     }
 
-    @Pointcut("withincode(* com.aspectj.practice.interfaces.User(..)) || withincode(* com.aspectj.practice.MainActivity.onCreate(..))")
+    @Pointcut("withincode(* com.aspectj.practice.framework.interfaces.User(..)) || withincode(* com.aspectj.practice.MainActivity.onCreate(..))")
     public void withinCodePointcut() {
 
     }
