@@ -9,6 +9,8 @@ public interface User {
 
     int add(int userId);
 
+    <T> T sub(T param);
+
     void update();
 
     void delete();

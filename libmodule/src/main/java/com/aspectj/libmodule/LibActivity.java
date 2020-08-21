@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.aspectj.annotation.Page;
 import com.aspectj.libmodule.imp.UserImp;
+import com.aspectj.practice.framework.interfaces.User;
 
 /**
  * @author shhe
@@ -28,6 +29,9 @@ public class LibActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lib_activity);
         findViewById(R.id.tv_get_annotation_value).setOnClickListener(mOnClickListener);
+        findViewById(R.id.tv_param_passing).setOnClickListener(mOnClickListener);
+        findViewById(R.id.tv_param_T).setOnClickListener(mOnClickListener);
+        findViewById(R.id.tv_if).setOnClickListener(mOnClickListener);
     }
 
     @Override
@@ -54,6 +58,15 @@ public class LibActivity extends AppCompatActivity {
 
                 UserImp user = new UserImp();
                 user.addAttribute(1);
+            } else if (v.getId() == R.id.tv_param_passing) {
+                User user = new UserImp();
+                user.add(10000);
+            } else if (v.getId() == R.id.tv_param_T) {
+                User user = new UserImp();
+                user.sub(5l);
+            } else if (v.getId() == R.id.tv_if) {
+                User user = new UserImp();
+                user.add(10000);
             }
         }
     };

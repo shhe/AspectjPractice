@@ -18,6 +18,11 @@ public class UserImp implements User {
     }
 
     @Override
+    public <T> T sub(T param) {
+        return param;
+    }
+
+    @Override
     public void update() {
 
     }

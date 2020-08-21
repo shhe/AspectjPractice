@@ -30,6 +30,42 @@
                     android:background="@color/tv_color"
                     android:gravity="center"
                     android:text="get annotation value"/>
+
+                <TextView
+                    android:id="@+id/tv_param_passing"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/tv_color"
+                    android:gravity="center"
+                    android:text="param passing"/>
+
+                <TextView
+                    android:id="@+id/tv_param_T"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/tv_color"
+                    android:gravity="center"
+                    android:text="param T"/>
+
+                <TextView
+                    android:id="@+id/tv_if"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/tv_color"
+                    android:gravity="center"
+                    android:text="if"/>
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>

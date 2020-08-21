@@ -157,10 +157,10 @@ public class PointcutCategory {
 
     }
 
-    /*@After(value = "thisPointcut()")
-    public void thisAfter() {
-
-    }*/
+    @After(value = "thisPointcut()")
+    public void thisAfter(JoinPoint joinPoint) {
+        Log.i(TAG, "thisAfter ..... "+joinPoint.getStaticPart().getSignature() + " "+joinPoint.getSourceLocation());
+    }
 
     /**
      * target 用于匹配当前目标对象类型的执行方法

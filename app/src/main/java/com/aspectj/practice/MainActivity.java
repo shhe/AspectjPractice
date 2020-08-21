@@ -97,6 +97,11 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
+            public <T> T sub(T param) {
+                return param;
+            }
+
+            @Override
             public void update() {
 
             }
@@ -129,6 +134,11 @@ public class MainActivity extends AppCompatActivity {
                     throw new IllegalArgumentException(" test ");
                 }
                 return 1;
+            }
+
+            @Override
+            public <T> T sub(T param) {
+                return param;
             }
 
             @Override
