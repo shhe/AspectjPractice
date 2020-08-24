@@ -17,4 +17,9 @@ public class FundamentalOperationsImpl implements FundamentalOperations {
     public int sub(int a, int b) {
         return a - b;
     }
+
+    @Override
+    public long multi(long a, long b) {
+        return a * b;
+    }
 }

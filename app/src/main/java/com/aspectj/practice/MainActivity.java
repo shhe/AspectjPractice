@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         test();
         findViewById(R.id.tv_launch).setOnClickListener(mOnClickListener);
+        findViewById(R.id.tv_initialization).setOnClickListener(mOnClickListener);
         findViewById(R.id.tv_field).setOnClickListener(mOnClickListener);
         findViewById(R.id.tv_constructor).setOnClickListener(mOnClickListener);
         findViewById(R.id.tv_handler).setOnClickListener(mOnClickListener);
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
+                case R.id.tv_initialization:
+                    com.aspectj.libmodule.imp.FundamentalOperationsImpl operationsImpl = new com.aspectj.libmodule.imp.FundamentalOperationsImpl();
+                    break;
                 case R.id.tv_launch:
                     LibActivity.launch(MainActivity.this);
                     break;

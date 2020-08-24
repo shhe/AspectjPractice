@@ -64,7 +64,7 @@ public class ParameterPassing {
 
     /**
      * if 表达式 只能是if()、if(true)或者if(false),而且@Pointcut方法必须是 public static boolean，方法体内
-     * 就是if表踏实的内容，可以使用暴露的参数、静态属性、JoinPoint、StaticPart、JoinPoint.EnclosingStaticPart
+     * 就是if 表达式的内容，可以使用暴露的参数、静态属性、JoinPoint、StaticPart、JoinPoint.EnclosingStaticPart
      * @param joinPoint
      * @param staticPart
      * @param userId
