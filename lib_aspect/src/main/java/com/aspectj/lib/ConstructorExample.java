@@ -96,4 +96,14 @@ public class ConstructorExample {
     public void beforePreInitialization(JoinPoint joinPoint) {
         Log.i(TAG, "beforePreInitialization : " + joinPoint.getSignature() + " Location:"+ joinPoint.getSourceLocation() + " this: "+joinPoint.getThis() + " target:" + joinPoint.getTarget());
     }
+
+    @Pointcut("within(com.aspectj.lib.ConstructorExample) && adviceexecution() && if()")
+    public static boolean adviceexEcutionOfThisAspect(JoinPoint joinPoint) {
+        return !joinPoint.getSignature().toString().contains("beforeAdviceexecution");
+    }
+
+    @Before("adviceexEcutionOfThisAspect(joinPoint)")
+    public void beforeAdviceexecution(JoinPoint joinPoint) {
+        Log.i(TAG, "beforeAdviceexecution : " + joinPoint.getSignature() + " Location:"+ joinPoint.getSourceLocation() + " this: "+joinPoint.getThis() + " target:" + joinPoint.getTarget());
+    }
 }
