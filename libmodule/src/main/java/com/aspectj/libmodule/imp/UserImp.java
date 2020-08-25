@@ -9,7 +9,7 @@ import com.aspectj.practice.framework.interfaces.User;
  * @Date 2020/8/10 下午4:31
  * @Description:
  */
-@ClassAnnotation
+@ClassAnnotation(note = "UserImp")
 public class UserImp implements User {
 
     @Override

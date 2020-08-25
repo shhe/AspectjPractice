@@ -40,7 +40,7 @@ public class TackPage {
     /**
      * 匹配 AppCompatActivity 类及其子类的 onCreate 方法的执行
      */
-/*    @Pointcut(ON_CREATE2)
+    @Pointcut(ON_CREATE2)
     public void enterPagePointcut(Bundle bundle) {
 
     }
@@ -76,6 +76,6 @@ public class TackPage {
 
     @Before(value = "ComputeOptionCall()")
     public void methodCall(JoinPoint joinPoint) {
-        Log.i(TAG, "... methodCall ... "+joinPoint.getSignature().getName()+" "+joinPoint.getSourceLocation()*//*+ " page:"+ page.name()*//*);
-    }*/
+        Log.i(TAG, "... methodCall ... "+joinPoint.getSignature().getName()+" "+joinPoint.getSourceLocation());
+    }
 }

@@ -12,5 +12,5 @@ public interface FundamentalOperations {
 
     int sub(int a, int b);
 
-    long multi(@ParamAnnotation(note = "param one") long a, long b);
+    long multi(long a, long b);
 }

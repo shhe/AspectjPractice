@@ -8,7 +8,15 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.aspectj.annotation.Page;
+import com.aspectj.lib.imp.FundamentalOperationsImpl2;
+import com.aspectj.libmodule.args.BaseType;
+import com.aspectj.libmodule.args.SubType1;
+import com.aspectj.libmodule.args.SubType2;
+import com.aspectj.libmodule.args.SubType3;
+import com.aspectj.libmodule.args.TypeTest;
+import com.aspectj.libmodule.imp.FundamentalOperationsImpl;
 import com.aspectj.libmodule.imp.UserImp;
+import com.aspectj.practice.framework.interfaces.FundamentalOperations;
 import com.aspectj.practice.framework.interfaces.User;
 
 /**
@@ -32,6 +40,8 @@ public class LibActivity extends AppCompatActivity {
         findViewById(R.id.tv_param_passing).setOnClickListener(mOnClickListener);
         findViewById(R.id.tv_param_T).setOnClickListener(mOnClickListener);
         findViewById(R.id.tv_if).setOnClickListener(mOnClickListener);
+        findViewById(R.id.tv_extend).setOnClickListener(mOnClickListener);
+        findViewById(R.id.tv_at_args).setOnClickListener(mOnClickListener);
     }
 
     @Override
@@ -67,6 +77,15 @@ public class LibActivity extends AppCompatActivity {
             } else if (v.getId() == R.id.tv_if) {
                 User user = new UserImp();
                 user.add(10000);
+            } else if (v.getId() == R.id.tv_extend) {
+                FundamentalOperationsImpl2 operations = new FundamentalOperationsImpl2();
+                operations.multi(2, 3);
+                operations.multi2(2);
+            } else if (v.getId() == R.id.tv_at_args) {
+                TypeTest typeTest = new TypeTest();
+                typeTest.function(new SubType1());
+                typeTest.function(new SubType2());
+                typeTest.function(new SubType3());
             }
         }
     };

@@ -170,10 +170,10 @@ public class PointcutCategory {
 
     }
 
-    /*@After(value = "targetPointcut()")
-    public void targetAfter() {
-
-    }*/
+    @After(value = "targetPointcut()")
+    public void targetAfter(JoinPoint joinPoint) {
+        Log.i(TAG, "targetAfter location: "+joinPoint.getSourceLocation() + joinPoint.getSignature());
+    }
 
     /**
      * 匹配使用了注解 ClassAnnotation 的类
@@ -184,8 +184,8 @@ public class PointcutCategory {
     }
 
     @After(value = "withAnnotationClassPointcut()")
-    public void afterWithAnnotationClass() {
-
+    public void afterWithAnnotationClass(JoinPoint joinPoint) {
+        Log.i(TAG, "afterWithAnnotationClass location: "+joinPoint.getSourceLocation() + joinPoint.getSignature());
     }
 
     /**
@@ -206,8 +206,8 @@ public class PointcutCategory {
 
 //    @After(value = "withAnnotationMethodPointcut()")
     @After(value = "withAnnotationMethodPointcut2()")
-    public void afterWithAnnotationMethod() {
-
+    public void afterWithAnnotationMethod(JoinPoint joinPoint) {
+        Log.i(TAG, "afterWithAnnotationMethod location: "+joinPoint.getSourceLocation() + joinPoint.getSignature());
     }
 
     /**
@@ -219,8 +219,8 @@ public class PointcutCategory {
     }
 
     @After(value = "withOperatorPointcut()")
-    public void afterWithOperator() {
-
+    public void afterWithOperator(JoinPoint joinPoint) {
+        Log.i(TAG, "afterWithOperator location: "+joinPoint.getSourceLocation() + joinPoint.getSignature());
     }
 
     /**
@@ -232,8 +232,8 @@ public class PointcutCategory {
     }
 
     @After(value = "withOperatorAddNamePointcut()")
-    public void afterWithOperatorAdd() {
-
+    public void afterWithOperatorAdd(JoinPoint joinPoint) {
+        Log.i(TAG, "afterWithOperatorAdd location: "+joinPoint.getSourceLocation() + joinPoint.getSignature());
     }
 
     @Pointcut("call(* com.aspectj.practice.framework.interfaces.User.*(..))")

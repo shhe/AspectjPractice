@@ -1,5 +1,6 @@
 package com.aspectj.practice.imp;
 
+import com.aspectj.annotation.ParamAnnotation;
 import com.aspectj.practice.framework.interfaces.FundamentalOperations;
 
 /**
@@ -19,7 +20,7 @@ public class FundamentalOperationsImpl implements FundamentalOperations {
     }
 
     @Override
-    public long multi(long a, long b) {
+    public long multi(@ParamAnnotation(note = "param one")long a, long b) {
         return a * b;
     }
 }
